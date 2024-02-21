@@ -41,3 +41,51 @@ body {
   background-repeat:no-repeat;
   background-size:cover;
 }
+
+/* Top nav bar menu related styles goes here */
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topLogo {
+  width: 150px;
+  height: 65px;;
+}
+
+.topnav a {
+  float: left;
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: solid;
+  font-size: 14px;
+}
+
+.topnav_lowbottom {
+  float: left;
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  padding: 9px 10px !important;
+  text-decoration: solid;
+  font-size: 14px;
+}
+
+.topnav_lowtop {
+  float: left;
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  padding: 3px 10px !important;
+  text-decoration: solid;
+  font-size: 14px;
+}
+
+.topnav a:hover {
+  color: white;
+  text-decoration: solid;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
