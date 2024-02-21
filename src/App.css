@@ -166,3 +166,17 @@ body {
   height: 30px;
   fill: #fff;
 }
+
+/* Language bar related Style */
+.langbar {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.languageBarItem {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  justify-content: left;
+  text-align: left;
+}
