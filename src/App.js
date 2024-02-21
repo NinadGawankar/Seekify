@@ -15,18 +15,18 @@ function App() {
         <a className="topnav_lowtop" href="#More"><h4 className='h2More'>...</h4></a>
       </div>
       <header className="App-header">
-        <img src={logo} alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div class="search-container">
+          <div class="search-icon">
+            <img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" alt="Search icon" />
+          </div>
+          <input type="text" placeholder="Search the web" class="search-input" />
+          <div class="mic-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/13407/13407108.png " alt="Mic icon" />
+          </div>
+          <div class="image-search-icon">
+            <img src="   https://cdn-icons-png.flaticon.com/512/11749/11749338.png" alt="Image Search icon" />
+          </div>
+        </div>
       </header>
     </div>
   );
