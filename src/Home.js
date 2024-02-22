@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, Navigate, Link } from 'react-router-dom';
+import { Route, Routes, Navigate, Link, useHistory } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import Result from './Result';
 import './Home.css';
@@ -12,8 +12,10 @@ function Home() {
     document.body.style.backgroundSize = "cover";
 
     const navigate = useNavigate();
+    const [searchTerm, setSearchTerm] = React.useState('');
     function handleSubmit(event) {
         event.preventDefault();
+        setSearchTerm(event.target.elements.searchInput.value)
         navigate('/Result');
     }
 
@@ -35,7 +37,7 @@ function Home() {
                             <div class="search-icon">
                                 <img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" alt="Search icon" />
                             </div>
-                            <input type="text" placeholder="Search the web" class="search-input" />
+                            <input type="text" placeholder="Search the web" name="searchInput" class="search-input" />
                             <div class="mic-icon">
                                 <img src="https://cdn-icons-png.flaticon.com/512/13407/13407108.png " alt="Mic icon" />
                             </div>
@@ -61,7 +63,7 @@ function Home() {
                 </header>
             </div>
             <Routes>
-                <Route path="/Result" component={Result} />
+                <Route path="/Result" element={<Result searchTerm={searchTerm} />} />
             </Routes>
         </>
     );

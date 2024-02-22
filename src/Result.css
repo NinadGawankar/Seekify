@@ -143,3 +143,17 @@ body {
     height: 30px;
     fill: #fff;
   }
+
+  .locations-list {
+    float: left;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .list-item {
+    width: 100%;
+  }
+
+  .innerTable {
+    width: 100%;
+  }
