@@ -1,0 +1,181 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-image: url('img/background.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+/* Top nav bar menu related styles goes here */
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topLogo {
+  width: 150px;
+  height: 65px;;
+}
+
+.topnav a {
+  float: left;
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: solid;
+  font-size: 14px;
+}
+
+.topnav_lowbottom {
+  float: left;
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  padding: 9px 10px !important;
+  text-decoration: solid;
+  font-size: 14px;
+}
+
+.topnav_lowtop {
+  float: left;
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  padding: 3px 10px !important;
+  text-decoration: solid;
+  font-size: 14px;
+}
+
+.topnav a:hover {
+  color: white;
+  text-decoration: solid;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Search Bar Related CSS */
+.search-container {
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+  width: 610px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 1px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+/* Style for search input */
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 13px;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+/* Style for search icon */
+.search-icon {
+  padding: 11px;
+  padding-left: 14px;
+  padding-right: 0px;
+  background-color: white;
+  border-radius: 25px 0 0 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+/* Style for search icon */
+.mic-icon {
+  padding: 5px;
+  background-color: white;
+  border-radius: 25px 25px 25px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+/* Style for search icon */
+.image-search-icon {
+  padding: 5px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 25px 25px 25px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+/* Style for search icon image */
+.search-icon img {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+/* Style for search icon image */
+.mic-icon img {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+/* Style for search icon image */
+.image-search-icon img {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+/* Language bar related Style */
+.langbar {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.languageBarItem {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  justify-content: left;
+  text-align: left;
+}
