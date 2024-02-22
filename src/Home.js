@@ -6,6 +6,11 @@ import './Home.css';
 import background from './img/background.jpg'
 
 function Home() {
+
+    document.body.style.backgroundImage = "url(" + background + ")";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+
     const navigate = useNavigate();
     function handleSubmit(event) {
         event.preventDefault();
