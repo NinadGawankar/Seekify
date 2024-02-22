@@ -1,9 +1,17 @@
 import React from "react";
 import { Route, Routes, Navigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Result from './Result';
 import './Home.css';
+import background from './img/background.jpg'
 
 function Home() {
+    const navigate = useNavigate();
+    function handleSubmit(event) {
+        event.preventDefault();
+        navigate('/Result');
+    }
+
     return (
         <>
             <div className="App">
@@ -17,18 +25,20 @@ function Home() {
                     <a className="topnav_lowtop" href="#More"><h4 className='h2More'>...</h4></a>
                 </div>
                 <header className="App-header">
-                    <div class="search-container">
-                        <div class="search-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" alt="Search icon" />
+                    <form onSubmit={handleSubmit}>
+                        <div class="search-container">
+                            <div class="search-icon">
+                                <img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" alt="Search icon" />
+                            </div>
+                            <input type="text" placeholder="Search the web" class="search-input" />
+                            <div class="mic-icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/13407/13407108.png " alt="Mic icon" />
+                            </div>
+                            <div class="image-search-icon">
+                                <img src="   https://cdn-icons-png.flaticon.com/512/11749/11749338.png" alt="Image Search icon" />
+                            </div>
                         </div>
-                        <input type="text" placeholder="Search the web" class="search-input" />
-                        <div class="mic-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/512/13407/13407108.png " alt="Mic icon" />
-                        </div>
-                        <div class="image-search-icon">
-                            <img src="   https://cdn-icons-png.flaticon.com/512/11749/11749338.png" alt="Image Search icon" />
-                        </div>
-                    </div>
+                    </form>
                     <div className="langbar">
                         <span className="languageBarItem">Languages:</span> &nbsp;
                         <a className="languageBarItem" href="/?setlang=hi&amp;cc=in&amp;cc=IN" data-h="ID=HpApp,32432.1" aria-label="Hindi">हिंदी</a> &nbsp;
